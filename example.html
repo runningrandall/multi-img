@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Multi Image jQuery Plugin Example</title>
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="js/jquery.multi-image.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".mi").multiImage();
+			});
+	</head>
+	<body>
+		<h1>Multi Image Demo</h1>
+		<p>The below image will load a small, medium, or desktop version of your image depending on your viewport width.</p>
+		<div class="mi"
+			data-image="https://s3.amazonaws.com/myriad-web/prolaris.com/banners/lows-not-same.jpg" 
+			data-image-medium="https://s3.amazonaws.com/myriad-web/prolaris.com/banners/lows-not-same-medium.jpg" 
+			data-image-small="https://s3.amazonaws.com/myriad-web/prolaris.com/banners/lows-not-same-small.jpg"
+			data-alt="Not all Lows are the same - Prolaris">
+			<noscript>
+				<img src="https://s3.amazonaws.com/myriad-web/prolaris.com/banners/lows-not-same-medium.jpg" alt="Not all Lows are the same - Prolaris" />
+			</noscript>
+		</div>
+	</body>
+</html>
+		
